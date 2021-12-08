@@ -1,0 +1,71 @@
+
+var readLineSync = require('readline-sync');
+
+
+var score = 0;
+
+
+
+
+function questionOne(question, answer){
+
+
+  var question = readLineSync.question("What is hitesh's age?  ");
+
+  if(question==="23"){
+    score++
+    console.log("You are right, your score is " + score)
+    console.log("--------")
+  } else {
+    score--
+    console.log("He is 23 years old, your score is " + score)
+    console.log("---------")
+  }
+}
+
+questionOne("What is hitesh's age? ", 23)
+
+
+
+
+
+function questionTwo(question, answer){
+
+  var question = readLineSync.question("How many siblings he has? ")
+
+  if(question==="two"||"2"){
+    score++
+    console.log("You are right, your score is " + score)
+    console.log("--------")
+  } else {
+    score--
+    console.log("He has two siblings, your score is " + score)
+    console.log("---------")
+  }
+}
+
+questionTwo("How many siblings he has? ", "two")
+
+
+
+
+
+function questionThree(question, answer){
+
+var question = readLineSync.question("What is hitesh's favorite food? ");
+
+if(question.toUpperCase() ==="cholle bhature".toUpperCase()){
+  score++
+  console.log("You are right, your score is " + score)
+  console.log("--------")
+} else {
+  score--
+  console.log("His favorite food is Cholle Bhature", "your score is  " + score)
+  console.log("---------")
+}
+}
+
+questionThree("What is hitesh's favorite food? ", "cholle bhature");
+
+
+2
